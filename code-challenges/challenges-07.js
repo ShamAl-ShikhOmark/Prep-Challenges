@@ -92,7 +92,7 @@ const objLat = (obj) => {
 const cvFormatter = (arr) => {
     const arr1 = [];
     let fullName = "";
-    for(let x = 0; i<arr.length; x++){
+    for(let x = 0; x<arr.length; x++){
 
         if(arr[x].yearsOfExperience>1 && (arr[x].firstName||arr[x].lastName)){
             fullName = (arr[x].firstName ? arr[x].firstName + " " : "") + (arr[x].lastName ? arr[x].lastName + "" : "");
