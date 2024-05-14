@@ -104,9 +104,18 @@ const courses = [
 const getInfo = (arr) => {
   let coursesName = [];
   let studentsName = [];
+for ( let i=0 ; i<arr.length; i++) {
+  for(let j in arr[i]){
+      if(j=="course")
+  coursesName.push(courses[i][j])
+  if(j=="Students"){
+  for (let x of courses[i][j]  )
+  studentsName.push(x)
+}}}
+  return { coursesName, studentsName };
   // write your code here
 
-  return { coursesName, studentsName };
+ 
 };
 // -------------------------------------------------------------------------------------------------------
 
